@@ -1,0 +1,27 @@
+{% extends "WebAPP/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+    <!-- Contenido -->
+    <div class="FormCont">
+
+        {% if "valido" in request.GET %}
+            <div> <p style="color: white; text-align: center;">Informacion Enviado Correctamente</p> </div>
+        {% endif %}
+        {% if "error" in request.GET %}
+            <div> <p style="color: white; text-align: center;">Se ha porducido un error al enviar los datos</p> </div>
+        {% endif %}
+
+        <h1 style="color: white;">Contacto</h1>
+        <form action="" method="POST" style="text-align: center;">
+            {% csrf_token %}
+            <table style="color: white; margin: 20px auto;">{{ formulario.as_table }}</table>
+            <input type="submit" value="Enviar">
+        </form>
+      
+    </div>
+
+
+{% endblock %}
