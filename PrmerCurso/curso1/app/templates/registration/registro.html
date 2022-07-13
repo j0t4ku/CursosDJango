@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+     <title>Registro de Usuario</title>
+</head>
+<body>
+    {% load crispy_forms_tags %}
+    <div class="container">
+        <div class="row-div col-12 col-md-6 offset-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <h2>Resgistrarse</h2>
+                    <hr>
+                    <form action="" method="POST">
+                        {% csrf_token %}
+                        
+                        {{form | crispy }}
+                        <hr>
+                        <a href="{% url 'home' %}">Principal</a>
+                        &nbsp; | &nbsp;
+                        <a href="{% url 'login' %}">Login</a>
+                        <input type="submit" value="Registrarse" class="btn btn-success float-right">
+                    
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
