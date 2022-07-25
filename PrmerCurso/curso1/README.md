@@ -1,5 +1,5 @@
-#Este es un proyecto realizado en un curso de Djanfo 
-######Link del curso => https://www.youtube.com/watch?v=M1D4nd6Hihc&list=PL3XiwX4b6ls0Ye0IkKgZpxzXh3EGe_TOJ
+#Este es un proyecto realizado en un curso de Djanfo  \n
+######Link del curso => [https://www.youtube.com/watch?v=M1D4nd6Hihc&list=PL3XiwX4b6ls0Ye0IkKgZpxzXh3EGe_TOJ]
 
 En este curso se realiza un proyecto de tienda online, con un loguin de usuarios normales y atraves de la autenticacion con facebook.
 los requisitos para el proyecto se encuentra en el archivo requirements.txt, en el se especifican las librerias utilizadas en el proyecto.
